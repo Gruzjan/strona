@@ -20,5 +20,6 @@ from playground import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('siemajson/', views.siema_json),
-    path('zsl/', views.zsl)
+    path('zsl/', views.zsl),
+    path('add/', views.adding)
 ]

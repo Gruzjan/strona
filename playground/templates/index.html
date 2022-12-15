@@ -8,11 +8,15 @@
   <main>
     <h1>{{ welcome_message }}</h1>
     <h2>ZSL</h2>
-    Przedmioty
+    123
     <ul>
       {% for lesson in lessons %}
       <li>{{lesson.name}} ({{ lesson.lecturer }})</li>
       {% endfor %}
+      {% for student in students %}
+      <li>{{student.name}} {{ student.surname }} {{student.rooster.name}}</li>
+      {% endfor %}
+      <li>Klasa jakas: {{classes.0.name}}</li>
     </ul>
   </main>
 </body>
